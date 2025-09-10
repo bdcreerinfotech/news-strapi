@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_stories",
+  "info": {
+    "singularName": "web-story",
+    "pluralName": "web-stories",
+    "displayName": "Web Story"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "storytitle": {
+      "type": "component",
+      "component": "shared.story-component",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

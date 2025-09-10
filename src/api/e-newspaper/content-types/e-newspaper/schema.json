@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_newspapers",
+  "info": {
+    "singularName": "e-newspaper",
+    "pluralName": "e-newspapers",
+    "displayName": "E-Newspaper"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
